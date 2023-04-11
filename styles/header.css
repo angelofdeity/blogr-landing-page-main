@@ -1,1 +1,50 @@
+header {
+    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat center center hsl(13, 100%, 72%);
+    height: 85vh;
+    border-bottom-left-radius: 6rem;
+    font-family: 'Overpass', sans-serif;
+}
 
+.navbar {
+    text-align: left;
+    padding: 60px 30px 90px 30px;
+}
+
+.hero-heading {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.hero {
+    display: flex;
+    color: white;
+    margin-inline: 25px;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.hero-btn.white {
+    background-color: white;
+    border: 1px solid white;
+    color: hsl(356, 100%, 66%);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-btn.transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
