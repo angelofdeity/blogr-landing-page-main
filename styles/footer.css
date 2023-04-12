@@ -1,8 +1,37 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    /* position: fixed;
+    bottom: 0; */
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+li {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.blue.footer {
+    background-color: hsl(240, 10%, 16%);
+    padding: 50px 0px;
+    color: hsl(240, 2%, 79%);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-top: 80px;
+    border-top-right-radius: 6rem;
+    text-align: center;
+}
+
+.footer.logo {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.footer h3 {
+    color: hsl(0, 0%, 100%);
+    margin: 40px auto;
 }
