@@ -29,15 +29,16 @@ section .heading {
 }
 
 section .text {
-    color: rgb(0, 0, 0, 0.7);
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 0.5px;
     margin: 20px 0px;
     font-weight: 300;
-    padding: 0px 20px;
+    line-height: 1.8;
+    padding: 0px 25px;
 }
 
 .text.white {
     color: hsl(0, 0%, 100%);
-    line-height: 1.8;
 }
 
 .bg-blue-circles {

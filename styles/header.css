@@ -1,6 +1,10 @@
 header {
-    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat center center hsl(13, 100%, 72%);
-    height: 85vh;
+    background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(../images/bg-pattern-intro-mobile.svg) no-repeat 30% 30%;
+    background-blend-mode: hard-light;
+    /* height: 85vh; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
     border-bottom-left-radius: 6rem;
     margin-bottom: 6rem;
 }
