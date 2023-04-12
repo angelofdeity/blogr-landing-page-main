@@ -19,7 +19,8 @@ header {
 }
 
 .menu {
-    font-size: 3em;
+    transform: scale(1.8, 1);
+    font-size: 1.5em;
     color: hsl(0, 0%, 100%);
 }
 
