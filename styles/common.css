@@ -56,7 +56,7 @@ section .text {
     left: 0;
     right: 0;
     height: 400px;
-    width: min(85%, 400px);
+    width: min(100%, 400px);
     margin: auto;
     top: -200px;
 }
