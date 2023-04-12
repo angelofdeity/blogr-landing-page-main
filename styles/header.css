@@ -2,7 +2,7 @@ header {
     background: url(../images/bg-pattern-intro-mobile.svg) no-repeat center center hsl(13, 100%, 72%);
     height: 85vh;
     border-bottom-left-radius: 6rem;
-    font-family: 'Overpass', sans-serif;
+    margin-bottom: 6rem;
 }
 
 .navbar {

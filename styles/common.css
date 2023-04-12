@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Overpass', sans-serif;
 }
 
 body {
@@ -9,4 +9,8 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     text-align: center;
+}
+
+section .blue-headers {
+    color: hsl(208, 49%, 24%);
 }
