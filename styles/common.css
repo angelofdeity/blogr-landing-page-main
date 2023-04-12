@@ -42,9 +42,11 @@ section .text {
 }
 
 .bg-blue-circles {
-    background: url(../images/bg-pattern-circles.svg) no-repeat 40% bottom hsl(237, 17%, 21%);
+    background: url(../images/bg-pattern-circles.svg) no-repeat 40% -35rem hsl(237, 17%, 21%);
     position: relative;
-    margin: 200px 0px;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    border-radius: 0rem 5.5rem;
     padding: 200px 0px;
     color: hsl(0, 0%, 100%);
 }
@@ -54,7 +56,11 @@ section .text {
     left: 0;
     right: 0;
     height: 400px;
-    width: min(100%, 500px);
+    width: min(85%, 400px);
     margin: auto;
     top: -200px;
+}
+
+.desktop-img {
+    width: min(100%, 600px);
 }

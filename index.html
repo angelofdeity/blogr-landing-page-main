@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/e3e43fbd96.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -20,7 +22,12 @@
 <body>
   <header>
     <nav class="navbar">
-      <img src="./images/logo.svg" alt="logo">
+      <div>
+        <img class="img-logo" src="./images/logo.svg" alt="logo">
+      </div>
+      <div>
+        <i class="fa fa-sharp fa-light fa-bars menu"></i>
+      </div>
     </nav>
     <div class="hero">
       <h3 class="hero-heading">A modern publishing platform</h3>
@@ -58,6 +65,7 @@
       </p>
     </section>
     <section>
+      <img class="desktop-img" src="./images/illustration-laptop-mobile.svg" alt="">
       <h3 class="blue heading">Free, open, simple</h3>
       <p class="text">Blogr is a free and open source application backed by a large community of helpful developers. It
         supports

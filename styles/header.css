@@ -1,7 +1,6 @@
 header {
     background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(../images/bg-pattern-intro-mobile.svg) no-repeat 30% 30%;
     background-blend-mode: hard-light;
-    /* height: 85vh; */
     display: flex;
     flex-direction: column;
     padding-bottom: 150px;
@@ -10,8 +9,18 @@ header {
 }
 
 .navbar {
-    text-align: left;
     padding: 60px 30px 90px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .img-logo {
+    width: 100%;
+}
+
+.menu {
+    font-size: 3em;
+    color: hsl(0, 0%, 100%);
 }
 
 .hero-heading {
