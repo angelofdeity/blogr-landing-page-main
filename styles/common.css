@@ -64,3 +64,26 @@ section .text {
 .desktop-img {
     width: min(100%, 600px);
 }
+
+@media screen and (min-width: 1000px) {
+    .desktop-block {
+        display: flex;
+        text-align: left;
+        gap: 4%;
+        align-items: center;
+        justify-items: left;
+        margin-right: 0.5em;
+    }
+
+    .desktop-block .right {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-right: 3vw;
+    }
+
+    .desktop-img {
+        width: 70vw;
+        margin-left: -18vw;
+    }
+}
