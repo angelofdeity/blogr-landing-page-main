@@ -62,8 +62,30 @@ header {
     margin-inline: auto;
 }
 
+.dropdown {
+    margin-top: 1em;
+    padding: 1px 0;
+    display: none;
+    font-size: smaller;
+    background-color: hsl(0, 9%, 90%)
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: hsl(208, 49%, 24%);
+    opacity: 0.75;
+}
+
+.clicked {
+    opacity: 0.75;
+}
+
+.visible {
+    display: block;
+}
+
 .hidden {
-    /* display: none; */
+    display: none;
 }
 
 .navbar button {
@@ -82,6 +104,11 @@ header {
     transform: scale(1.8, 1);
     font-size: 1.5em;
     color: hsl(0, 0%, 100%);
+}
+
+.x-icon {
+    font-size: 2.5em;
+    color: white;
 }
 
 .hero-heading {
