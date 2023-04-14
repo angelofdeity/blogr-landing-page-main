@@ -14,11 +14,36 @@ header {
     justify-content: space-between;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 18px;
+    top: 6rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    width: 15rem;
+    padding: 1rem 4rem;
+    gap: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(208, 49%, 24%);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-button {
+    border: hidden;
+    background: none;
+    cursor: pointer;
+}
+
 .navbar .img-logo {
     width: 100%;
 }
 
-.menu {
+.menu-icon {
     transform: scale(1.8, 1);
     font-size: 1.5em;
     color: hsl(0, 0%, 100%);

@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/e3e43fbd96.js" crossorigin="anonymous"></script>
+  <script src="./scripts/menu.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -25,8 +26,17 @@
       <div>
         <img class="img-logo" src="./images/logo.svg" alt="logo">
       </div>
+      <div class="hidden menu">
+        <span>Product</span>
+        <span>Company</span>
+        <span>Connect</span>
+        <button>Login</button>
+        <button>Sign Up</button>
+      </div>
       <div>
-        <i class="fa fa-sharp fa-light fa-bars menu"></i>
+        <button aria-label="menu" title="menu" class="menu-button">
+          <i class="fa fa-sharp fa-light fa-bars menu-icon"></i>
+        </button>
       </div>
     </nav>
     <div class="hero">
