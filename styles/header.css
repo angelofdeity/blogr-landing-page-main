@@ -16,19 +16,18 @@ header {
 
 .menu {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 18px;
-    top: 6rem;
-    border-radius: 5px;
-    border: 1px solid hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 100%);
-    width: 15rem;
-    padding: 1.5rem 1rem;
-    gap: 1.2rem;
     font-weight: 600;
+    gap: 1.2rem;
     font-family: 'Overpass', sans-serif;
-    color: hsl(208, 49%, 24%);
+}
+
+.gap-flex {
+    gap: 1.5rem;
+    display: flex;
+}
+
+.company-info {
+    margin-top: 0.8rem;
 }
 
 .arrow {
@@ -46,15 +45,11 @@ header {
 }
 
 #login {
-    color: hsl(208, 49%, 24%);
     font-size: 16px;
-    border-top: 1px solid hsl(0, 4%, 86%);
-    padding-top: 1.2em;
+
 }
 
 #sign-up {
-    color: hsl(0, 0%, 100%);
-    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     font-size: 16px;
     padding: .7em 1.5em;
     width: 120px;
@@ -151,4 +146,65 @@ header {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        flex-direction: column;
+        position: absolute;
+        right: 18px;
+        top: 6rem;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 100%);
+        width: 15rem;
+        padding: 1.5rem 1rem;
+        color: hsl(208, 49%, 24%);
+    }
+
+    #login {
+        border-top: 1px solid hsl(0, 4%, 86%);
+        color: hsl(208, 49%, 24%);
+        padding-top: 1.2em;
+    }
+
+    .gap-flex {
+        flex-direction: column;
+    }
+
+    #sign-up {
+        color: hsl(0, 0%, 100%);
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+}
+
+/* Additional styles for screens larger than 768px */
+@media (min-width: 768px) {
+
+    /* Hide the menu button */
+    .menu-button {
+        display: none;
+    }
+
+
+    .menu {
+        display: flex;
+        margin-left: 3%;
+        justify-content: space-between;
+        width: 80%;
+        color: hsl(0, 0%, 100%);
+    }
+
+    #login {
+        color: white;
+    }
+
+    #sign-up {
+        color: hsl(356, 100%, 66%);
+        background-color: white;
+    }
+
+    .arrow {
+        color: hsl(0, 0%, 100%);
+    }
 }

@@ -25,3 +25,8 @@ for (const item of menuItems) {
     }
   };
 }
+console.log(window.innerWidth);
+if (window.innerWidth > 1000) {
+  console.log(window.innerWidth + 1);
+  menuButton.classList.add('hidden');
+}
