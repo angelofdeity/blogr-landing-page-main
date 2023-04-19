@@ -40,9 +40,6 @@ header {
     transform: rotate(180deg);
 }
 
-.pointer {
-    cursor: pointer;
-}
 
 #login {
     font-size: 16px;
@@ -62,20 +59,15 @@ header {
     padding: 1px 0;
     display: none;
     font-size: smaller;
-    background-color: hsl(0, 9%, 90%)
 }
 
 .dropdown a {
     text-decoration: none;
-    color: hsl(208, 49%, 24%);
     opacity: 0.75;
 }
 
-.clicked {
-    opacity: 0.75;
-}
 
-.visible {
+.visible.dropdown {
     display: block;
 }
 
@@ -106,9 +98,22 @@ header {
     color: white;
 }
 
+.active:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown a:hover {
+    opacity: 1;
+}
+
 .hero-heading {
     font-weight: 600;
-    font-size: 32px;
+    font-size: calc(2rem + 1vw);
+}
+
+.hero p {
+    font-size: calc(1rem + 0.5vw);
 }
 
 .hero {
@@ -126,11 +131,12 @@ header {
     gap: 1em;
 }
 
+
 .hero-btn.white {
     background-color: white;
     border: 1px solid white;
     color: hsl(356, 100%, 66%);
-    padding: 15px 10px;
+    padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
@@ -141,7 +147,7 @@ header {
     background-color: transparent;
     border: 1px solid white;
     color: white;
-    padding: 15px 10px;
+    padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
@@ -162,10 +168,22 @@ header {
         color: hsl(208, 49%, 24%);
     }
 
+    .dropdown {
+        background-color: hsl(0, 9%, 90%)
+    }
+
+    .dropdown a {
+        color: hsl(208, 49%, 24%);
+    }
+
     #login {
         border-top: 1px solid hsl(0, 4%, 86%);
         color: hsl(208, 49%, 24%);
         padding-top: 1.2em;
+    }
+
+    .clicked {
+        opacity: 0.75;
     }
 
     .gap-flex {
@@ -186,7 +204,6 @@ header {
         display: none;
     }
 
-
     .menu {
         display: flex;
         margin-left: 3%;
@@ -195,12 +212,42 @@ header {
         color: hsl(0, 0%, 100%);
     }
 
+    .dropdown {
+        width: 10rem;
+        color: black;
+        text-align: left;
+        position: absolute;
+        padding-left: 1.2rem;
+        background-color: white;
+    }
+
+    .dropdown a {
+        color: black;
+    }
+
+    #start:hover,
+    #sign-up:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: white;
+        border-color: hsl(355, 100%, 74%);
+    }
+
+    #learn:hover {
+        background-color: white;
+        color: hsl(355, 100%, 74%);
+    }
+
+
+    .navbar {
+        margin-inline: 7%;
+    }
+
     #login {
         color: white;
     }
 
     #sign-up {
-        color: hsl(356, 100%, 66%);
+        color: hsl(355, 100%, 74%);
         background-color: white;
     }
 
