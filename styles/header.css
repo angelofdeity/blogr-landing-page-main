@@ -119,7 +119,7 @@ header {
 .hero {
     display: flex;
     color: white;
-    margin-inline: 40px;
+    margin-inline: 1.5rem;
     row-gap: 20px;
     flex-direction: column;
 }
