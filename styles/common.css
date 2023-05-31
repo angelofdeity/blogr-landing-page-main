@@ -1,12 +1,150 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: hsl(0, 0%, 100%);
     text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.heading {
+    color: hsl(208, 49%, 24%);
+    margin: 25px 0px;
+    padding: 0px 25px;
+    font-size: 28px;
+}
+
+.white.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 38px;
+}
+
+.editor img {
+    width: min(100%, 500px);
+}
+
+section .text {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: 0.5px;
+    margin: 20px 0px;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 0px 25px;
+}
+
+.text.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.bg-blue-circles {
+    background: url(../images/bg-pattern-circles.svg) no-repeat center -40rem hsl(237, 17%, 21%);
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    border-radius: 0rem 5.5rem;
+    padding: 200px 0px;
+    color: hsl(0, 0%, 100%);
+}
+
+.phones {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: min(100%, 400px);
+    margin: auto;
+    top: -200px;
+}
+
+.desktop-img {
+    width: min(100%, 600px);
+}
+
+@media screen and (min-width: 1000px) {
+    .section1 {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .bg-blue-circles,
+    .editor-block {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        text-align: left;
+    }
+
+    .bg-blue-circles {
+        background-position: left bottom;
+        margin-bottom: 8rem;
+        margin-top: 50px;
+        height: 400px;
+        background-size: 60%;
+    }
+
+    .editor-block {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .editor-block .left {
+        padding-left: 8%;
+        padding-top: 5%;
+    }
+
+    .editor-block .left p {
+        margin-bottom: 10%;
+    }
+
+    .editor {
+        height: 55rem;
+    }
+
+    .editor img {
+        margin-right: -20vw;
+        margin-top: -4rem;
+        width: 70rem;
+        position: absolute;
+    }
+
+    section .left {
+        width: 50%;
+    }
+
+    section .right {
+        width: 50%;
+    }
+
+    .phones {
+        position: relative;
+        top: 0;
+        width: min(40rem, 100%);
+        height: min(40rem, 100%);
+    }
+
+    .desktop-block {
+        display: flex;
+        text-align: left;
+        gap: 4%;
+        align-items: center;
+        justify-items: left;
+        margin-right: 0.5em;
+    }
+
+    .desktop-block .right {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-right: 3vw;
+    }
+
+    .desktop-img {
+        width: 70vw;
+        margin-left: -18vw;
+    }
 }

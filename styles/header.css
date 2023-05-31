@@ -1,37 +1,142 @@
 header {
-    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat center center hsl(13, 100%, 72%);
-    height: 85vh;
+    background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(../images/bg-pattern-intro-mobile.svg) no-repeat 30% 30%;
+    background-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
     border-bottom-left-radius: 6rem;
-    font-family: 'Overpass', sans-serif;
+    margin-bottom: 6rem;
 }
 
 .navbar {
-    text-align: left;
     padding: 60px 30px 90px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    font-weight: 600;
+    gap: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+.gap-flex {
+    gap: 1.5rem;
+    display: flex;
+}
+
+.company-info {
+    margin-top: 0.8rem;
+}
+
+.arrow {
+    color: hsl(13, 100%, 72%);
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.rotate-down {
+    transform: rotate(180deg);
+}
+
+
+#login {
+    font-size: 16px;
+
+}
+
+#sign-up {
+    font-size: 16px;
+    padding: .7em 1.5em;
+    width: 120px;
+    border-radius: 30px;
+    margin-inline: auto;
+}
+
+.dropdown {
+    margin-top: 1em;
+    padding: 1px 0;
+    display: none;
+    font-size: smaller;
+}
+
+.dropdown a {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+
+.visible.dropdown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar button {
+    border: hidden;
+    font-family: 'Overpass', sans-serif;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar .img-logo {
+    width: 100%;
+}
+
+.menu-icon {
+    transform: scale(1.8, 1);
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.x-icon {
+    font-size: 2.5em;
+    color: white;
+}
+
+.active:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown a:hover {
+    opacity: 1;
 }
 
 .hero-heading {
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: calc(2rem + 1vw);
+}
+
+.hero p {
+    font-size: calc(1rem + 0.5vw);
 }
 
 .hero {
     display: flex;
     color: white;
-    margin-inline: 25px;
+    margin-inline: 1.5rem;
     row-gap: 20px;
     flex-direction: column;
 }
 
 .hero-buttons {
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
+
 
 .hero-btn.white {
     background-color: white;
     border: 1px solid white;
     color: hsl(356, 100%, 66%);
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
@@ -42,9 +147,111 @@ header {
     background-color: transparent;
     border: 1px solid white;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        flex-direction: column;
+        position: absolute;
+        right: 18px;
+        top: 6rem;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 100%);
+        width: 15rem;
+        padding: 1.5rem 1rem;
+        color: hsl(208, 49%, 24%);
+    }
+
+    .dropdown {
+        background-color: hsl(0, 9%, 90%)
+    }
+
+    .dropdown a {
+        color: hsl(208, 49%, 24%);
+    }
+
+    #login {
+        border-top: 1px solid hsl(0, 4%, 86%);
+        color: hsl(208, 49%, 24%);
+        padding-top: 1.2em;
+    }
+
+    .clicked {
+        opacity: 0.75;
+    }
+
+    .gap-flex {
+        flex-direction: column;
+    }
+
+    #sign-up {
+        color: hsl(0, 0%, 100%);
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+}
+
+/* Additional styles for screens larger than 768px */
+@media (min-width: 768px) {
+
+    /* Hide the menu button */
+    .menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 3%;
+        justify-content: space-between;
+        width: 80%;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .dropdown {
+        width: 10rem;
+        color: black;
+        text-align: left;
+        position: absolute;
+        padding-left: 1.2rem;
+        background-color: white;
+    }
+
+    .dropdown a {
+        color: black;
+    }
+
+    #start:hover,
+    #sign-up:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: white;
+        border-color: hsl(355, 100%, 74%);
+    }
+
+    #learn:hover {
+        background-color: white;
+        color: hsl(355, 100%, 74%);
+    }
+
+
+    .navbar {
+        margin-inline: 7%;
+    }
+
+    #login {
+        color: white;
+    }
+
+    #sign-up {
+        color: hsl(355, 100%, 74%);
+        background-color: white;
+    }
+
+    .arrow {
+        color: hsl(0, 0%, 100%);
+    }
 }
